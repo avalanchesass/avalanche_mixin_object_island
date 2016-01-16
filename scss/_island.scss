@@ -1,0 +1,20 @@
+/*---
+title:   Island Mixin
+section: Mixin
+---
+
+Box off content - [Harry Roberts - The 'island' object](http://csswizardry.com/2011/10/the-island-object/).
+
+```css
+o-island([$-spacing: 1.5em])
+```
+
+```css
+.foo {
+  @include o-island();
+}
+```
+*/
+@mixin o-island($-spacing: 1.5em) {
+  padding: $-spacing;
+}
